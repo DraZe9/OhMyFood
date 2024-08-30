@@ -5,6 +5,7 @@ body {
 /* header */
 
 header {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -70,6 +71,9 @@ header {
 /* Tuto */
 
 .tuto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding-left: 50px;
     font-size: 50px;
     gap: 30px;
@@ -115,5 +119,87 @@ header {
     color: #7E7E7E;
 }
 
+/*restaurants*/ 
 
+.card-new {
+    display: flex;
+    position: absolute;
+    right: 37px;
+    top: 37px;
+    background: #99E2D0;
+    z-index: 1;
+    color: #008766;
+    font-size: 50px;
+    padding: 17px 27px;
+    font-weight: bold;
+}
 
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    margin-top: 37px;
+    background-color: #f5f5f5;
+}
+
+.restaurants-title {
+    font-size: 50px;
+}
+
+.card {
+    height: 20%;
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 37px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex-direction: column;
+    margin-bottom: 37px;
+}
+
+.card-picture {
+    border-radius: 37px 37px 0 0;
+    object-fit: cover; 
+    object-position: 100% 60%;
+    width: 100%;
+    height: 30vh;
+}
+
+.restaurants-card {
+    width: 100%;
+}
+
+.card-title {
+	margin: 0;
+	padding: 0 27px 0 27px;
+	font-size: 50px;
+}
+
+.restaurants-link {
+	text-decoration: none;
+	color: black;
+}
+
+.card-subtitle {
+	margin: 0;
+	padding: 0 27px 0 27px;
+	font-weight: none;
+	font-size: 50px;
+}
+
+.card-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.card-content {
+	font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px;
+	flex-direction: row;
+}
