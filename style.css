@@ -29,3 +29,39 @@ header {
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
+.sommaire {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 70px;
+    gap: 45px;
+    background-color: #f5f5f5;
+}
+
+.sommaire-titre {
+    font-size: 70px;
+}
+
+.sommaire-texte {
+    font-size: 40px;
+    color:#353535;
+}
+
+.sommaire-button{
+    padding: 30px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border: none;
+    font-size: 50px;
+    border-radius: 75px;
+    padding: 40px;
+    margin-top: 25px;
+    color: white;
+    box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+
+
+
