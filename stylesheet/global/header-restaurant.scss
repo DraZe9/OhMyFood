@@ -1,0 +1,15 @@
+@use 'variable' as *;
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 150px;
+    .header__arrow{
+        font-size: 50px;
+        margin-left: 75px;
+        align-items: center;
+        display: flex;
+    }
+}
