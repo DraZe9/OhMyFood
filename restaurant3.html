@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -10,7 +12,7 @@
 </head>
 <body>
    <header>
-      <a href="index.html">
+      <a class="link" href="index.html">
          <div class="header__arrow">
             <i class="fa-solid fa-arrow-left" href="index.html"></i>
          </div>
@@ -20,16 +22,17 @@
       </div>
    </header>
 
-   <div class="img">
-
+   <div class="menu__picture">
+      <img src="assets/images/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
    </div>
    <div class="menu">
       <div class="menu__header">
          <div class="menu-header__title">
-            <h2>La note enchantée</h2>
+            <h2>À la française</h2>
          </div>
          <div class="menu-header__heart">
-            <i class="fa-regular fa-heart"></i>
+            <input type="checkbox" id="toggle-like-3" hidden>
+            <label for="toggle-like-3" class="far fa-heart"></label>
          </div>
       </div>
       <div class="menu__entree">
@@ -39,32 +42,40 @@
          <div class="menu-button__container">
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Ravioles de foie gras</div>
-                  <div class="button__text--normal">Accompagnées de leur crème à la truffe</div>
+                  <p class="button__text--bold">Tartare de poulpe acidulé</p>
+                  <p class="button__text--normal">Aux zestes d'orange</p>
                </div>
-               <div class="button__price">25€</div>
+               <p class="button__price">25€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Caviar osciètre</div>
-                  <div class="button__text--normal">Sur blini à la farine de blé noir</div>
+                  <p class="button__text--bold">Velouté de légumes d'antan</p>
+                  <p class="button__text--normal">Carotte, panais, topinambour</p>
                </div>
-               <div class="button__price">35€</div>
+               <p class="button__price">35€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Homard et espuma de potiron</div>
-                  <div class="button__text--normal">Marinés aux zestes d'orange</div>
+                  <p class="button__text--bold">Soupe à l'oignon</p>
+                  <p class="button__text--normal">Revisitée</p>
                </div>
-               <div class="button__price">20€</div>
+               <p class="button__price">20€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
-            <div class="menu__button">
-                <div class="button__text">
-                   <div class="button__text--bold">Foie gras de canard cuit entier</div>
-                   <div class="button__text--normal">Confiture de figue et pain toasté</div>
-                </div>
-                <div class="button__price">35€</div>
-             </div>
          </div>
       </div>
       <div class="menu__plats">
@@ -74,24 +85,39 @@
          <div class="menu-button__container">
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Noix de coquilles Saint-Jacques</div>
-                  <div class="button__text--normal">Sur lit de purée de céleri-rave</div>
+                  <p class="button__text--bold">Coquilles Saint-Jacques</p>
+                  <p class="button__text--normal">Accompagnées d'une purée de panais</p>
                </div>
-               <div class="button__price">40€</div>
+               <p class="button__price">40€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Langoustine poêlée</div>
-                  <div class="button__text--normal">Purée de patate douce</div>
+                  <p class="button__text--bold">Magret de canard</p>
+                  <p class="button__text--normal">Et parmentier de pommes de terre</p>
                </div>
-               <div class="button__price">35€</div>
+               <p class="button__price">35€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Mijoté de queue de bœuf</div>
-                  <div class="button__text--normal">Et riz sauvage aux zestes de citron</div>
+                  <p class="button__text--bold">Pigeonneau d’Ille-et-Vilaine</p>
+                  <p class="button__text--normal">Sur son lit de gnocchis aux légumes</p>
                </div>
-               <div class="button__price">45€</div>
+               <p class="button__price">44€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -102,24 +128,39 @@
          <div class="menu-button__container">
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Macaron noisette et chocolat</div>
-                  <div class="button__text--normal">Glace au caramel brun et sel de Guérande</div>
+                  <p class="button__text--bold">Pétales de violettes glacés</p>
+                  <p class="button__text--normal">Et purée de noisettes</p>
                </div>
-               <div class="button__price">18€</div>
+               <p class="button__price">18€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Baba au rhum revisité</div>
-                  <div class="button__text--normal">Avec son coulis de citron</div>
+                  <p class="button__text--bold">Fondant au chocolat</p>
+                  <p class="button__text--normal">Revisité</p>
                </div>
-               <div class="button__price">22€</div>
+               <p class="button__price">22€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
             <div class="menu__button">
                <div class="button__text">
-                  <div class="button__text--bold">Tarte au citron meringuée </div>
-                  <div class="button__text--normal">Déstructurée</div>
+                  <p class="button__text--bold">Millefeuille croustillant</p>
+                  <p class="button__text--normal">Myrtilles et pâte d’amande</p>
                </div>
-               <div class="button__price">23€</div>
+               <p class="button__price">23€</p>
+               <div class="menu__button--confirmation">
+                  <div class="menu__button--wrapIcon">
+                    <i class="menu__button--icon fas fa-check"></i>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
