@@ -140,11 +140,11 @@ header {
 	align-items: center;
 	cursor: pointer;
 	padding: 30px;
-	background: #f5f5f5;
+	background: $color_2;
 	box-shadow: 0px 4px 10px 0px #00000040;
 	border-radius: 20px;
 	i {
-		color: $color_3;
+		color: $background-color_3;
 	}
 	p{
 		font-weight: 500;
@@ -235,7 +235,7 @@ header {
 						margin-bottom: 20px;
 					  	cursor: pointer;
 					  	color: black;
-					  	transition: color 0.2s ease, background 0.2 ease;
+					  	transition: color 2s ease, background 2s ease;
 					  	font-weight: 400; 
 					}
 			
